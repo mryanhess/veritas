@@ -1,0 +1,100 @@
+/* 
+Theme Name: customtheme
+Description: Starter theme for Veritas site
+Author: M Ryan Hess
+Version: 0.0.1
+Template: twentysixteen
+
+*/
+
+@import url('../twentysixteen/style.css');
+
+
+
+
+/* Post metadata content */
+
+
+.book-header {
+    background-color:#333;
+    color:#eeeeee;
+    font-size: 90%;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding:3px 1rem;
+}
+
+/* Featured Book 'Bookshelf' Banner */
+.bookshelf {
+    padding: 20px 0px;
+}
+
+.book {
+    margin: 0px;
+}
+
+/* Book List 'Citation-style Listing' */
+
+.book-citation {
+    display: block;
+}
+
+.book-meta > h1 {
+    display: inline;
+    font-weight: 200;
+    font-size: 1rem;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-style: italic;
+}
+
+.book-metadata {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+.book-meta-author > h2 {
+    display:block;
+    font-weight: 100;
+}
+.book-meta-publisher {
+    display: block;
+    font-size: .75rem;
+}
+.book-accolades {
+    display: block;
+    font-size: .75rem;
+    color:orangered;
+}
+
+/*
+.book-content {
+    display: block;
+    overflow: auto;
+}
+
+h1.book-entry-title {
+    border-bottom: thin #000000 solid;
+    float: left;
+    width: 50%;
+*/
+}
+
+
+/*
+@media (max-width: 643px){
+    #veritas-logo {
+        padding:15px;
+    }
+    .book-entry-thumbnail {
+        float:left;
+    }
+    .book-entry-thumbnail img {
+        padding: 10px 0px 10px 0px;
+        
+    }
+    h1.book-entry-title {
+        width: 100%;
+        overflow: inherit;
+        clear: both;
+    }
+}
+*/
