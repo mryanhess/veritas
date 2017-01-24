@@ -1,4 +1,4 @@
-# Veritas Documentation #
+# Veritas Site Documentation #
 
 Readme for Veritas Wordpress Site
 
