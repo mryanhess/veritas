@@ -14,9 +14,9 @@
 // the loop
     $books = new WP_Query( $args );
 
-    echo '<aside id="featured-books" class="clear bookshelf">';
+    echo '<aside id="featured-books" class="clear bookshelf center">';
     while ( $books->have_posts() ) : $books->the_post();
-        echo '<div class="book alignleft">';
+        echo '<div class="book">';
         echo '<figure class="book-thumb alignleft">';
         the_post_thumbnail('small-thumb');
         echo '</figure>';

@@ -24,27 +24,27 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1>Representative Titles</h1>
+				<h1 class="entry-title">Representative Titles</h1>
 			</header><!-- .page-header -->
 
+            <div class="entry-content">
+                <?php get_template_part( 'template-parts/featured-titles' ); ?>  
 
-        <?php get_template_part( 'template-parts/featured-titles' ); ?>  
+
+                <?php get_template_part( 'template-parts/book-list' ); ?>   
 
 
-        <?php get_template_part( 'template-parts/book-list' ); ?>   
-            
- 
-            
-            
-            
-		<?php
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
 
+
+                <?php
+                // If no content, include the "No posts found" template.
+                else :
+                    get_template_part( 'template-parts/content', 'none' );
+
+                endif;
+                ?>
+            </div>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 

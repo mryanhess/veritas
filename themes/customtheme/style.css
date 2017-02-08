@@ -10,7 +10,71 @@ Template: twentysixteen
 @import url('../twentysixteen/style.css');
 
 
+/* global element styles */
+body {
+    background-color: #ffffff;
+}
+html * {
+    font-family: 'Quicksand', sans-serif;
+}
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-summary h1, .entry-summary h2, .entry-summary h3, .entry-summary h4, .entry-summary h5, .entry-summary h6, .comment-content h1, .comment-content h2, .comment-content h3, .comment-content h4, .comment-content h5, .comment-content h6, .textwidget h1, .textwidget h2, .textwidget h3, .textwidget h4, .textwidget h5, .textwidget h6, h1, h1 > a, h2, h2 > a, h3, h4, h5 {
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
 
+.entry-content > h1, .entry-content > h2, .entry-content > h3, .entry-content > h4, .entry-content > h5 {
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: .25em;
+    
+}
+
+/* alignment */
+.center {
+    text-align: center;
+}
+
+.jumbo {
+    font-size: 500%;
+}
+
+.site-title, .entry-title {
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
+
+.betababel-branding {
+    color:#d3d3d3;
+}
+
+/* front-page styles */
+
+.front-header {
+    padding: 1em 7.6923% 0em 7.6923%;
+}
+.site-branding-front {
+    width: 100%
+}
+/* centers menu based on a fixed em length. Will require adjusting as menu items are added */
+.front-menu {
+    width: 31em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* sub-page styles */
+
+.subpage-header {
+    padding-bottom: 3em;
+}
+.entry-header {
+    border-top: 4px solid #1a1a1a;
+    margin: 0 7.6923% 3.5em;
+    padding-top: 1.75em;
+}
+.site-title {
+    min-width: 14em;
+}
 
 /* Post metadata content */
 
@@ -31,70 +95,59 @@ Template: twentysixteen
 
 .book {
     margin: 0px;
+    display:inline-block;
 }
 
 /* Book List 'Citation-style Listing' */
 
 .book-citation {
     display: block;
+    border-top: thin solid #e1e1e1;
+    margin:20px 0px;
+    padding-top: 20px;
+}
+.book-meta {
+    max-width: 500px;
 }
 
 .book-meta > h1 {
     display: inline;
-    font-weight: 200;
-    font-size: 1rem;
-    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.5rem;
     font-style: italic;
 }
 
-.book-metadata {
-    background-color: #f1f1f1;
-    padding: 10px;
-}
-.book-meta-author > h2 {
+.book-meta > h2 {
     display:block;
     font-weight: 100;
+    font-size: 1rem;
 }
 .book-meta-publisher {
     display: block;
-    font-size: .75rem;
+    font-weight:100;
+    font-size: .90rem;
 }
 .book-accolades {
     display: block;
     font-size: .75rem;
-    color:orangered;
-}
-
-/*
-.book-content {
-    display: block;
-    overflow: auto;
-}
-
-h1.book-entry-title {
-    border-bottom: thin #000000 solid;
-    float: left;
-    width: 50%;
-*/
+    color:#336699;
 }
 
 
-/*
+
 @media (max-width: 643px){
-    #veritas-logo {
-        padding:15px;
-    }
-    .book-entry-thumbnail {
-        float:left;
-    }
-    .book-entry-thumbnail img {
-        padding: 10px 0px 10px 0px;
-        
-    }
-    h1.book-entry-title {
-        width: 100%;
-        overflow: inherit;
-        clear: both;
+    .bookshelf {
+        display:none;
     }
 }
-*/
+
+@media (max-width: 1100px){
+    .site-title {
+        min-width: 15em;
+        font-size: 1.5rem;
+    }
+    .primary-menu > li {
+        font-size: .85rem;
+    }
+}
